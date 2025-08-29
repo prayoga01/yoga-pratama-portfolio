@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MountainMate | A Web-Based Hiking Management System Case Study</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-slate-900 font-serif">
+    <!-- Header -->
+    <header class="border-b border-slate-200 py-4 mb-8">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <a href="index.html" class="text-2xl font-bold text-teal-600 tracking-tight">yogapratama.</a>
+        <nav>
+          <a href="index.html#projects" class="text-slate-500 hover:text-teal-600 transition text-sm">← Back to Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <article class="max-w-2xl mx-auto px-4">
+        <!-- Judul dan Info -->
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2">MountainMate : A Web-Based Hiking Management System</h1>
+        <div class="flex items-center gap-3 mb-6">
+          <img src="src/img/profile.png" alt="Yoga Pratama" class="w-8 h-8 rounded-full border" />
+          <span class="text-slate-700 font-medium">Yoga Pratama</span>
+          <span class="text-slate-400 text-sm">• July 2025</span>
+        </div>
+        <p class="text-lg text-slate-700 mb-8">A platform for climbers to access information, book tickets, and track weather, while admins manage data seamlessly.</p>
+
+        <!-- Gambar Utama -->
+        <img src="src/img/project-web1.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+
+        <!-- Disclaimer (opsional) -->
+        <blockquote class="border-l-4 border-teal-500 pl-4 italic text-slate-600 mb-8">
+          <b>Disclaimer:</b>This project is a personal case study, developed as my final project during my Bachelor’s degree, and is not affiliated with any company.
+        </blockquote>
+
+        <!-- Konten -->
+        <h2 class="text-2xl font-bold mt-10 mb-4">Overview</h2>
+        <p class="mb-8 text-slate-800 leading-relaxed">
+          MountainMate was developed as a web-based platform to enhance the hiking experience and streamline administrative processes for climbers and forestry officers. The system provides climbers with convenient access to mountain
+          information, booking services, regulations, and real-time weather conditions. Weather forecasts are automatically retrieved through integration with the Mountain-forecast.com API, allowing users to obtain more accurate and
+          location-specific weather predictions. In addition, administrators can manage climber data, monitor activities, and update mountain availability. This project was implemented using the Agile methodology, ensuring iterative
+          development, flexibility, and continuous stakeholder collaboration to meet the evolving requirements of the system.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Main Objectives</h2>
+        <ol class="list-decimal ml-6 mb-8 text-slate-800 leading-relaxed">
+          <li class="mb-2">To create a centralized, efficient, and reliable system for managing hiking activities.</li>
+          <li class="mb-2">To facilitate climbers in accessing regulations, booking hiking permits, and receiving real-time weather updates.</li>
+          <li class="mb-2">To support forestry administrators in managing mountain lists, climber data, payments, and regulations.</li>
+          <li class="mb-2">To improve user experience by providing a simple and interactive website accessible anytime and anywhere</li>
+        </ol>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Methodology</h2>
+        <p class="mb-8 text-slate-800 leading-relaxed">The project employed Agile Software Development, which emphasizes flexibility, collaboration, and incremental delivery. The methodology involved several phases:</p>
+        <!-- Gambar Design thinking methodelogy -->
+        <img src="src/img/UI/web-project/agile.jpeg" alt="agile" class="rounded-lg w-full mb-8 shadow" />
+        <ol class="list-decimal ml-6 mb-8 text-slate-800 leading-relaxed">
+          <li class="mb-2"><b>Analysis:</b> Examining user needs and correlating data for system design.</li>
+          <li class="mb-2"><b>Design:</b> Creating system architecture, interfaces, and use case diagrams collaboratively with stakeholders.</li>
+          <li class="mb-2"><b>Development:</b> Breaking down programming tasks into modules and ensuring integration of functions.</li>
+          <li class="mb-2"><b>Testing:</b>Conducting unit testing, integration testing, and user acceptance tests to validate system reliability.</li>
+          <li><b>Maintenance:</b>Iteratively refining the system based on user feedback and identified bugs</li>
+        </ol>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Website Pages</h2>
+        <ol class="list-decimal ml-6 mb-8 text-slate-800 leading-relaxed">
+          <li class="mb-2">
+            <b>Landing Page</b> of the MountainMate website is designed to welcome users with the slogan "Experience the Mountains with Simplified Booking" and a "Get Started" call-to-action button to begin planning. Right below it, users
+            can easily see the list of available mountains in the "Mountain List" section. Additionally, there is a navigation bar at the top that includes important menus such as Home, News & Regulation, and Transaction, which serves to
+            provide quick access to related pages. The overall design of this page effectively presents key information and guides users to explore the site's features further.
+          </li>
+          <img src="src/img/UI/web1/landing.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>The login page</b> serves as the main gateway into the system. On this page, users (both administrators and hikers) can enter their credentials to securely authenticate. Once successfully logged in, the system will
+            automatically redirect users to the dashboard or profile page according to their respective access rights.
+          </li>
+          <img src="src/img/UI/web1/login.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>The mountain detail page</b> provides comprehensive information to support users in planning their hikes. When a user selects a mountain image from the landing page, they are directed to a detail page that
+            displays key information such as the mountain’s image, weather forecast, climbing dates, maximum number of climbers, and availability status. The page also includes a short review of the mountain. To check availability, users
+            can refer to the "action" column: if it displays "booking now," the mountain is open for reservations. If the mountain has been deactivated by the administrator, the "booking now" button will change to "not able for now,"
+            indicating that the mountain is temporarily unavailable. Figure 4.8 presents an example of the mountain detail page with the "booking now" button.
+          </li>
+          <img src="src/img/UI/web1/mountain list user.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>The form booking feature</b> enables users to reserve a climbing schedule by completing the required form with accurate details. Alongside the form, the page also displays a brief overview of the selected mountain on the right side, including the mountain’s image and location. After the user fills in the necessary information and clicks the submit button, the system will display a success alert to confirm that the booking has been submitted.
+          </li>
+          <img src="src/img/UI/web1/form input user.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>The invoice feature</b> provides users with a clear overview of their booking status. On this page, users can view detailed information about their order along with its current status.
+          </li>
+          <img src="src/img/UI/web1/invoice.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>The dashboard admin</b>page serves as a centralized dashboard that provides administrators with key information and management tools. It features a notification bell that alerts the admin whenever a new transaction occurs, allowing quick access to updates. The page also displays important data, including the total number of mountains, the number of active and inactive mountains, and the earnings for the current month. With these features, the admin page offers comprehensive access to manage transactions and gain valuable insights into mountain management.
+          </li>
+          <img src="src/img/UI/web1/Dashboard admin.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>Mountan list admin,</b> feature enables administrators to efficiently manage mountain information within the system. Through this feature, admins can add new mountain data, edit existing records, and delete data when necessary. A search function is also provided to make data retrieval easier and faster. The interface of the mountain list feature is designed to be user-friendly, allowing admins to navigate seamlessly, update information, and maintain accurate records.
+          </li>
+          <img src="src/img/UI/web1/Mountain list.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <li class="mb-2">
+            <b>Manage Mountain admin,</b> page provides staff with a simple and structured interface to input new mountain data. Through this page, staff can complete a form with essential details such as the mountain’s name, address, longitude, latitude, image, and description. Accurate input of longitude and latitude is particularly important to ensure the weather forecast displayed is correct. The interface is designed to be user-friendly, guiding staff step by step in adding and managing mountain information effectively.
+          </li>
+          <img src="src/img/UI/web1/manage mountain.png" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+        </ol>
+
+        <div class="text-center text-slate-400 text-xs mb-12">Sample screens from Tripify</div>
+        <div class="flex justify-between items-center mt-12 mb-8">
+          <a href="index.html#projects" class="text-teal-600 hover:underline font-semibold text-sm">&larr; Back to Projects</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-8 text-center text-slate-400 text-sm border-t mt-12">&copy; 2025 Yoga Pratama. All rights reserved.</footer>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Tumor Detection Case Study</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-slate-900 font-serif">
+    <!-- Header -->
+    <header class="border-b border-slate-200 py-4 mb-8">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <a href="index.html" class="text-2xl font-bold text-teal-600 tracking-tight">yogapratama.</a>
+        <nav>
+          <a href="index.html#projects" class="text-slate-500 hover:text-teal-600 transition text-sm">← Back to Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <article class="max-w-2xl mx-auto px-4">
+        <!-- Judul dan Info -->
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2">Brain Tumor Detection</h1>
+        <div class="flex items-center gap-3 mb-6">
+          <img src="src/img/profile.png" alt="Yoga Pratama" class="w-8 h-8 rounded-full border" />
+          <span class="text-slate-700 font-medium">Yoga Pratama</span>
+          <span class="text-slate-400 text-sm">• July 2025</span>
+        </div>
+        <p class="text-lg text-slate-700 mb-8">
+          This study develops a brain tumor detection system on MRI images using a Convolutional Neural Network (CNN) as a second reader, with a focus on a head-to-head comparison between the Adam and SGDM optimizers within a single controlled architecture and pipeline.
+        </p>
+
+        <!-- Gambar Utama -->
+        <img src="src/img/closeup-brain-mri-scan-result.jpg" alt="MountainMate Project Preview" class="rounded-lg w-full mb-8 shadow" />
+
+        <!-- Disclaimer (opsional) -->
+        <blockquote class="border-l-4 border-teal-500 pl-4 italic text-slate-600 mb-8"><b>Disclaimer:</b>This project is a personal case study.</blockquote>
+
+        <!-- Konten -->
+        <h2 class="text-2xl font-bold mt-10 mb-4">Overview</h2>
+        <p class="mb-8 text-slate-800 leading-relaxed">
+          This study develops an automated brain–tumor detection system for MRI using a Convolutional Neural Network (CNN) designed to act as a second reader for radiologists. The work addresses two persistent issues in clinical imaging
+          workflows: (i) manual MRI interpretation is time-consuming and variable, particularly for small or low-contrast lesions; and (ii) deep learning performance in practice depends sensitively on training optimisation choices that are
+          often under-reported. To make the findings actionable and methodologically clean, the project holds the model architecture and dataset constant and conducts a head-to-head comparison of two widely used optimisers—Adam and
+          Stochastic Gradient Descent with Momentum (SGDM). The dataset is constructed by merging two public MRI repositories into a unified corpus with consistent labels (glioma, meningioma, pituitary, no-tumor) and harmonised
+          preprocessing. The intended contribution is a precise, evidence-based recommendation on optimiser selection for early and accurate CNN-based detection within an MRI-centred workflow.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Main Objectives</h2>
+        <p class="mb-8 text-slate-800 leading-relaxed">
+          Compare Adam vs. SGDM under identical conditions, quantifying effects on convergence dynamics (loss/accuracy curves), final test performance (accuracy, precision, recall/sensitivity, F1; optionally ROC-AUC), and stability across
+          runs.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Methodology</h2>
+        <p class="mb-8 text-slate-800 leading-relaxed">
+          Data curation and harmonisation. Two public brain-MRI sources are integrated into a single unified dataset. Class labels are mapped to a common taxonomy (glioma, meningioma, pituitary, no-tumor). Images are de-duplicated and
+          quality-checked, then preprocessed with consistent steps: slice selection for axial views, resizing to a fixed input resolution, intensity normalisation (z-score or min–max per slice/volume), optional bias-field correction, and
+          channel formatting (single-channel replicated to three channels if required by the backbone). To improve generalisation and balance classes, light data augmentation is applied (small rotations, translations, zoom, and intensity
+          jitter; flips only if anatomically appropriate).
+        </p>
+        <p class="mb-8 text-slate-800 leading-relaxed">Experimental design. A single CNN backbone is fixed for all experiments (feature extractor + task-specific classification head for four classes).</p>
+        <!-- Gambar Design thinking methodelogy -->
+
+        <h2 class="text-2xl font-bold mt-10 mb-4">Adam Optimizer Result</h2>
+        <ol class="list-decimal ml-6 mb-8 text-slate-800 leading-relaxed">
+          <li class="mb-2">
+            <!-- 1 -->
+            <b>VGG-16</b>
+          </li>
+          <img src="src/img/UI/brain tumor/vgg-16 result.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/accuracy vgg.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/confusion matrix vgg.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <!-- 2 -->
+          <li class="mb-2">
+            <b>MobileNetV2</b>
+          </li>
+          <img src="src/img/UI/brain tumor/mobilenet result.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/accuracy mobilenet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/confusion matrix mobilenet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+
+          <!-- 3 -->
+          <li class="mb-2">
+            <b>GoogleNet (InceptionV3)</b>
+          </li>
+          <img src="src/img/UI/brain tumor/googlenet result.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/accuracy googlenet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/confusion matrix googlenet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+
+          <!-- 4 -->
+          <li class="mb-2">
+            <b>AlexNet</b>
+          </li>
+          <img src="src/img/UI/brain tumor/alexnet result.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/accuracy alexnet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />
+          <img src="src/img/UI/brain tumor/confusion matrix alexnet.png" alt="MBarain tumor Project Preview" class="rounded-lg w-full mb-8 shadow" />         
+        </ol>
+        <div class="flex justify-between items-center mt-12 mb-8">
+          <a href="index.html#projects" class="text-teal-600 hover:underline font-semibold text-sm">&larr; Back to Projects</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-8 text-center text-slate-400 text-sm border-t mt-12">&copy; 2025 Yoga Pratama. All rights reserved.</footer>
+  </body>
+</html>

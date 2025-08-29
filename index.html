@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="text-2xl font-bold text-slate-950 block py-6">yogapratama.</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group"><a href="#home" class="text-base text-slate-500 group-hover:text-teal-500 py-2 mx-8 flex">Home</a></li>
+                <li class="group"><a href="#about" class="text-base text-slate-500 group-hover:text-teal-500 py-2 mx-8 flex">About</a></li>
+                <li class="group"><a href="#projects" class="text-base text-slate-500 group-hover:text-teal-500 py-2 mx-8 flex">Projects</a></li>
+                <li class="group"><a href="#contact" class="text-base text-slate-500 group-hover:text-teal-500 py-2 mx-8 flex">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-bold text-teal-500 md:text-xl lg:text-2xl">Hallo👋, I'm <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">Yoga Pratama</span></h1>
+            <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">A web Developer & UI/UX Designer</h2>
+            <p class="font-medium text-slate-400 mb-10">I love to design and develop user-friendly interfaces.</p>
+            <div class="flex items-center text-slate-300">
+              <a href="" class="text-base mr-3 font-semibold text-white bg-teal-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
+              <!-- Instagram Link -->
+              <a
+                href="https://www.instagram.com/_prayoga01/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-teal-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                <svg role="img" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!-- Threads Link -->
+              <a
+                href="https://www.threads.com/@_prayoga01"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-teal-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                <svg role="img" width="20" height="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Threads</title>
+                  <path
+                    d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"
+                  />
+                </svg>
+              </a>
+              <!-- LinkedIn Link -->
+              <a
+                href="https://www.linkedin.com/in/dharma-yoga/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-teal-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 64 64" class="fill-current">
+                  <title>Threads</title>
+                  <path
+                    d="M 23.773438 12 C 12.855437 12 12 12.854437 12 23.773438 L 12 40.226562 C 12 51.144563 12.855438 52 23.773438 52 L 40.226562 52 C 51.144563 52 52 51.145563 52 40.226562 L 52 23.773438 C 52 12.854437 51.145563 12 40.226562 12 L 23.773438 12 z M 21.167969 16 L 42.832031 16 C 47.625031 16 48 16.374969 48 21.167969 L 48 42.832031 C 48 47.625031 47.624031 48 42.832031 48 L 21.167969 48 C 16.374969 48 16 47.624031 16 42.832031 L 16 21.167969 C 16 16.374969 16.374969 16 21.167969 16 z M 22.501953 18.503906 C 20.872953 18.503906 19.552734 19.824172 19.552734 21.451172 C 19.552734 23.078172 20.871953 24.400391 22.501953 24.400391 C 24.126953 24.400391 25.447266 23.079172 25.447266 21.451172 C 25.447266 19.826172 24.126953 18.503906 22.501953 18.503906 z M 37.933594 26.322266 C 35.473594 26.322266 33.823437 27.672172 33.148438 28.951172 L 33.078125 28.951172 L 33.078125 26.728516 L 28.228516 26.728516 L 28.228516 43 L 33.28125 43 L 33.28125 34.949219 C 33.28125 32.826219 33.687359 30.771484 36.318359 30.771484 C 38.912359 30.771484 38.945312 33.200891 38.945312 35.087891 L 38.945312 43 L 44 43 L 44 34.074219 C 44 29.692219 43.054594 26.322266 37.933594 26.322266 z M 19.972656 26.728516 L 19.972656 43 L 25.029297 43 L 25.029297 26.728516 L 19.972656 26.728516 z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <!-- <a href="" class="text-base font-semibold text-white bg-teal-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a> -->
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img src="src/img/profile.png" alt="Yoga Pratama" class="max-w-full mx-auto" />
+              <!-- <span class="absolute -bottom-10 -top-1 -z-10 left-1/2 -translate-x-1/2 md:scale-125 lg:scale-110">
+                <svg width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#14b8a6"
+                    d="M42.2,-38.6C57.4,-27.1,74.3,-13.5,76.4,2.1C78.6,17.8,66,35.6,50.8,50.4C35.6,65.2,17.8,77,-0.2,77.2C-18.2,77.4,-36.3,65.9,-44.9,51.1C-53.5,36.3,-52.6,18.2,-53.4,-0.9C-54.3,-19.9,-57,-39.8,-48.4,-51.3C-39.8,-62.8,-19.9,-66,-3.2,-62.9C13.5,-59.7,27.1,-50.1,42.2,-38.6Z"
+                    transform="translate(100 100) scale(1.2)"
+                  />
+                </svg>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-30 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h2 class="font-bold uppercase text-teal-500 text-lg mb-3">About Me</h2>
+            <p class="text-base font-medium text-slate-400 mb-6 max-w-xl lg:text- text-justify">
+              I am a passionate web developer and UI/UX designer with a Bachelor's degree in Computer Science and currently pursuing a Master's in the same field. My journey into the world of web development began when I joined a
+              programming community, where I discovered my interest in creating not just functional, but also visually engaging digital experiences. <br />
+
+              I am constantly seeking to improve my skills and stay updated with the latest industry trends. My goal is to create user-centered designs that not only meet business objectives but also provide a delightful experience for
+              users.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Skills & Tools</h3>
+            <p class="font-medium text-base text-slate-400 mb-6 lg:text-lg">Here are some of the technologies and tools I work with:</p>
+            <div class="flex items-center">
+              <!-- HTML -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
+                <path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+              </svg>
+              <!-- CSS -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748" y2="41.109" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#2aa4f4"></stop>
+                  <stop offset="1" stop-color="#007ad9"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
+                  d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5H9.184C8.01,5,7.089,6.006,7.192,7.176z"
+                ></path>
+                <path fill="#35c1f1" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"></path>
+                <path fill="#fff" d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"></path>
+                <path fill="#d6e0e9" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z"></path>
+                <path
+                  d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z"
+                  opacity=".05"
+                ></path>
+                <path
+                  d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z"
+                  opacity=".07"
+                ></path>
+              </svg>
+              <!-- JS -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                <path
+                  fill="#000001"
+                  d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+                ></path>
+              </svg>
+              <!-- Bootstap -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path
+                  fill="#7c4dff"
+                  d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M 23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M 20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"
+                ></path>
+              </svg>
+              <!-- Tailwind CSS -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path
+                  fill="#00acc1"
+                  d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+                ></path>
+              </svg>
+              <!-- PHP -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path fill="#dcd5f2" d="M15,22.5c-7.995,0-14.5-3.364-14.5-7.5S7.005,7.5,15,7.5s14.5,3.364,14.5,7.5S22.995,22.5,15,22.5z"></path>
+                <path fill="#8b75a1" d="M15,8c7.589,0,14,3.206,14,7s-6.411,7-14,7S1,18.794,1,15S7.411,8,15,8 M15,7C(6.716,7,0,10.582,0,15 s6.716,8,15,8s15-3.582,15-8S23.284,7,15,7L15,7z"></path>
+                <path
+                  fill="#36404d"
+                  d="M9.417 13c.598 0 1.116.203 1.384.543.192.244.245.555.157.927C10.69 15.599 10.216 16 8.089 16H6.58l.563-3H9.417M9.417 12H6.313L5 19h1l.396-2h1.693c2.199 0 3.395-.417 3.842-2.299C12.316 13.084 11.039 12 9.417 12L9.417 12zM22.417 13c.598 0 1.116.203 1.384.543.192.244.245.555.157.927C23.69 15.599 23.216 16 21.089 16H19.58l.563-3H22.417M22.417 12h-3.104L18 19h1l.396-2h1.693c2.199 0 3.395-.417 3.842-2.299C25.316 13.084 24.039 12 22.417 12L22.417 12z"
+                ></path>
+                <g>
+                  <path
+                    fill="#36404d"
+                    d="M17.652,12.424C17.323,12.122,16.742,12,15.875,12h-1.848l0.451-2h-1.017L12,17h1.016l0.841-4h0.171 h1.848c0.91,0,1.094,0.155,1.096,0.155c0.019,0.03,0.058,0.194-0.008,0.532L16.288,17h1.046l0.61-3.121 C18.075,13.212,17.976,12.722,17.652,12.424z"
+                  ></path>
+                </g>
+              </svg>
+              <!-- Laravel -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="50px"
+                height="100px"
+                viewBox="0 0 128 128"
+                version="1.1"
+                class="w-9 h-9 mr-3 flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <g id="surface1">
+                  <path
+                    style="stroke: none; fill-rule: nonzero; fill: rgb(94.117647%, 32.54902%, 25.098039%); fill-opacity: 1"
+                    d="M 26.027344 0.136719 C 25.824219 0.214844 20.085938 3.484375 13.28125 7.394531 C 5.035156 12.136719 0.800781 14.632812 0.574219 14.867188 C 0.394531 15.070312 0.191406 15.421875 0.128906 15.644531 C -0.0429688 16.21875 -0.0546875 100.347656 0.117188 100.953125 C 0.179688 101.1875 0.382812 101.53125 0.566406 101.722656 C 1.011719 102.191406 50.238281 130.496094 50.835938 130.632812 C 51.113281 130.699219 51.425781 130.6875 51.734375 130.601562 C 52.40625 130.433594 101.503906 102.191406 101.941406 101.730469 C 102.121094 101.53125 102.324219 101.1875 102.390625 100.953125 C 102.476562 100.675781 102.507812 96.277344 102.507812 87.015625 L 102.507812 73.480469 L 114.476562 66.605469 C 125.761719 60.117188 126.453125 59.710938 126.742188 59.265625 L 127.039062 58.785156 L 127.039062 44.207031 C 127.039062 28.335938 127.070312 29.230469 126.441406 28.65625 C 126.273438 28.507812 120.523438 25.152344 113.652344 21.195312 L 101.171875 14.015625 L 99.785156 14.015625 L 87.574219 21.027344 C 80.851562 24.894531 75.136719 28.199219 74.859375 28.378906 C 74.582031 28.5625 74.25 28.902344 74.113281 29.148438 L 73.867188 29.574219 L 73.8125 43.308594 L 73.761719 57.046875 L 63.679688 62.855469 C 58.132812 66.042969 53.515625 68.683594 53.417969 68.707031 C 53.238281 68.757812 53.226562 67.449219 53.226562 42.203125 L 53.226562 15.632812 L 52.960938 15.175781 C 52.628906 14.621094 54.121094 15.507812 39.136719 6.894531 C 26.570312 -0.332031 26.871094 -0.179688 26.027344 0.136719 Z M 37.578125 10.65625 C 42.835938 13.671875 47.136719 16.167969 47.136719 16.199219 C 47.136719 16.230469 42.527344 18.894531 36.894531 22.132812 L 26.644531 28.015625 L 16.414062 22.132812 C 10.792969 18.894531 6.1875 16.230469 6.1875 16.199219 C 6.1875 16.167969 10.785156 13.503906 16.40625 10.273438 L 26.613281 4.402344 L 27.316406 4.785156 C 27.710938 5 32.332031 7.640625 37.578125 10.65625 Z M 110.730469 24.191406 C 116.265625 27.378906 120.84375 30.011719 120.886719 30.054688 C 121.003906 30.160156 100.703125 41.828125 100.425781 41.816406 C 100.148438 41.808594 80.097656 30.246094 80.105469 30.105469 C 80.117188 29.945312 100.289062 18.339844 100.492188 18.371094 C 100.585938 18.394531 105.195312 21.015625 110.730469 24.191406 Z M 14.828125 25.875 L 24.585938 31.492188 L 24.640625 59.304688 L 24.691406 87.121094 L 24.929688 87.496094 C 25.054688 87.695312 25.289062 87.964844 25.460938 88.089844 C 25.621094 88.207031 31.050781 91.300781 37.523438 94.953125 L 49.28125 101.59375 L 49.28125 113.359375 C 49.28125 119.816406 49.238281 125.113281 49.183594 125.113281 C 49.140625 125.113281 38.976562 119.296875 26.601562 112.175781 L 4.105469 99.238281 L 4.074219 59.464844 L 4.054688 19.703125 L 4.554688 19.980469 C 4.84375 20.132812 9.460938 22.785156 14.828125 25.875 Z M 49.28125 45.453125 L 49.28125 71.082031 L 48.886719 71.339844 C 48.351562 71.679688 28.8125 82.910156 28.746094 82.910156 C 28.714844 82.910156 28.691406 71.339844 28.691406 57.195312 L 28.703125 31.492188 L 38.910156 25.621094 C 44.523438 22.390625 49.152344 19.769531 49.207031 19.789062 C 49.246094 19.8125 49.28125 31.363281 49.28125 45.453125 Z M 88.222656 39.558594 L 98.453125 45.441406 L 98.453125 57.101562 C 98.453125 68.164062 98.441406 68.757812 98.273438 68.695312 C 98.164062 68.652344 93.535156 66 87.980469 62.800781 L 77.867188 56.992188 L 77.867188 45.335938 C 77.867188 38.917969 77.898438 33.675781 77.929688 33.675781 C 77.972656 33.675781 82.601562 36.320312 88.222656 39.558594 Z M 123.09375 45.261719 C 123.09375 51.644531 123.050781 56.910156 123.007812 56.960938 C 122.933594 57.078125 102.699219 68.738281 102.570312 68.738281 C 102.539062 68.738281 102.507812 63.496094 102.507812 57.078125 L 102.507812 45.421875 L 112.714844 39.546875 C 118.335938 36.320312 122.964844 33.675781 123.007812 33.675781 C 123.0625 33.675781 123.09375 38.886719 123.09375 45.261719 Z M 86.230469 66.46875 C 94.835938 71.421875 96.320312 72.308594 96.171875 72.425781 C 96.074219 72.488281 92.8125 74.363281 88.929688 76.582031 C 85.046875 78.796875 74.988281 84.53125 66.570312 89.328125 L 51.273438 98.054688 L 50.785156 97.789062 C 47.863281 96.191406 30.910156 86.546875 30.910156 86.472656 C 30.902344 86.3125 75.765625 60.53125 75.945312 60.597656 C 76.03125 60.628906 80.660156 63.269531 86.230469 66.46875 Z M 98.433594 87.558594 L 98.398438 99.238281 L 75.914062 112.175781 C 63.542969 119.296875 53.375 125.113281 53.324219 125.113281 C 53.269531 125.113281 53.226562 120.359375 53.226562 113.359375 L 53.226562 101.59375 L 75.765625 88.742188 C 88.148438 81.675781 98.324219 75.890625 98.378906 75.878906 C 98.421875 75.878906 98.441406 81.132812 98.433594 87.558594 Z M 98.433594 87.558594 "
+                  />
+                </g>
+              </svg>
+              <!-- JAVA -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path>
+                <path
+                  fill="#F44336"
+                  d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"
+                ></path>
+                <g>
+                  <path
+                    fill="#1565C0"
+                    d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"
+                  ></path>
+                  <path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"></path>
+                  <path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"></path>
+                  <path
+                    fill="#1565C0"
+                    d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"
+                  ></path>
+                  <path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path>
+                </g>
+              </svg>
+              <!-- PYTHON -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <linearGradient id="goqfu1ZNmEnUrQDJEQ1bUa_l75OEUJkPAk4_gr1" x1="10.458" x2="26.314" y1="12.972" y2="26.277" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#26abe7"></stop>
+                  <stop offset="1" stop-color="#086dbf"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#goqfu1ZNmEnUrQDJEQ1bUa_l75OEUJkPAk4_gr1)"
+                  d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2 H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104 c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672 C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498 c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"
+                ></path>
+                <linearGradient id="goqfu1ZNmEnUrQDJEQ1bUb_l75OEUJkPAk4_gr2" x1="35.334" x2="23.517" y1="37.911" y2="21.034" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#feb705"></stop>
+                  <stop offset="1" stop-color="#ffda1c"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#goqfu1ZNmEnUrQDJEQ1bUb_l75OEUJkPAk4_gr2)"
+                  d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2 h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104 c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672 C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498 c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"
+                ></path>
+              </svg>
+              <!-- GIT -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path
+                  fill="#F4511E"
+                  d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"
+                ></path>
+              </svg>
+              <!-- fIGMA -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center cursor-pointer hover:-translate-y-1 duration-500">
+                <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+                <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+                <path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path>
+                <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+                <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="pt-30 pb-32 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-wl-xl mx-auto text-left mb-16">
+            <div class="flex items-center">
+              <span class="w-8 h-[2px] bg-teal-500 mr-3"></span>
+              <h2 class="text-teal-500 font-semibold text-lg">Projects</h2>
+            </div>
+            <h2 class="text-2xl lg:text-4xl font-bold text-slate-950 mb-4">
+              Some things <br />
+              I've worked on
+            </h2>
+            <p class="text-gray-600 mb-6">Here are a few selected projects that showcase my skills and experience.</p>
+
+            <!-- Tabs Start -->
+            <div class="flex gap-2 mt-4">
+              <button class="tab-btn px-4 py-2 rounded-full text-sm font-semibold border border-teal-500 text-teal-500 bg-white hover:bg-teal-500 hover:text-white transition active" data-category="web">Web Project</button>
+              <button class="tab-btn px-4 py-2 rounded-full text-sm font-semibold border border-teal-500 text-teal-500 bg-white hover:bg-teal-500 hover:text-white transition" data-category="uiux">UI/UX</button>
+              <button class="tab-btn px-4 py-2 rounded-full text-sm font-semibold border border-teal-500 text-teal-500 bg-white hover:bg-teal-500 hover:text-white transition" data-category="ml">Machine Learning</button>
+            </div>
+            <!-- Tabs End -->
+          </div>
+        </div>
+        <!-- Grid Project Cards -->
+        <div id="projects-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          <!-- WEB PROJECT PART -->
+          <!-- Project 1 -->
+          <div class="project-card bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition p-6 flex flex-col" data-category="web">
+            <div class="relative mb-4">
+              <img src="src/img/project-web1.png" alt="Project 1" class="rounded-lg w-full h-56 object-cover" />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-semibold">Bootstrap</span>
+                <span class="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full font-semibold">Laravel</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">MountainMate</h3>
+            <p class="text-slate-600 mb-4 text-sm">Website untuk booking tiket pendakian, cek cuaca, dan dashboard admin. Fitur lengkap untuk user & admin.</p>
+            <a href="project-mountainmate.html" class="mt-auto inline-block px-5 py-2 rounded-full bg-teal-500 text-white font-semibold shadow hover:bg-teal-600 transition">View Study Case &rarr;</a>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition p-6 flex flex-col" data-category="web">
+            <div class="relative mb-4">
+              <img src="src/img/project-bc.png" alt="Project 1" class="rounded-lg w-full h-56 object-cover" />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-semibold">Tailwind</span>
+                <span class="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full font-semibold">Laravel</span>
+                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-semibold">Spring boot</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full font-semibold">Weka</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Breast Cancer : AI-Based Breast Cancer Screening</h3>
+            <p class="text-slate-600 mb-4 text-sm">Breast cancer screening supported by AI technology using the Naive Bayes algorithm.</p>
+            <a href="project-bc-detection.html" class="mt-auto inline-block px-5 py-2 rounded-full bg-teal-500 text-white font-semibold shadow hover:bg-teal-600 transition">View Study Case &rarr;</a>
+          </div>
+
+          <!-- UI/UX PART -->
+
+          <!-- Project 1 UI/UX -->
+          <div class="project-card bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition p-6 flex flex-col hidden" data-category="uiux">
+            <div class="relative mb-4">
+              <img src="src/img/project-uiux1.png" alt="Tripify App Design" class="rounded-lg w-full h-56 object-cover" />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full font-semibold">Figma</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full font-semibold">UI/UX</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Tripify App Design</h3>
+            <p class="text-slate-600 mb-4 text-sm">UI/UX design for an AI-powered travel assistant app. Focus on user flow, wireframe, and high-fidelity prototype.</p>
+            <a href="project-tripify.html" class="mt-auto inline-block px-5 py-2 rounded-full bg-teal-500 text-white font-semibold shadow hover:bg-teal-600 transition">View Study Case &rarr;</a>
+          </div>
+
+          <!-- MACHINE LEARNING PART -->
+
+          <!-- Project 1 Machine Learning -->
+          <div class="project-card bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition p-6 flex flex-col hidden" data-category="ml">
+            <div class="relative mb-4">
+              <img src="src/img/project-bc.png" alt="EduLearn Platform" class="rounded-lg w-full h-56 object-cover" />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-semibold">Tailwind</span>
+                <span class="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full font-semibold">Laravel</span>
+                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-semibold">Spring boot</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full font-semibold">Weka</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Breast Cancer : AI-Based Breast Cancer Screening</h3>
+            <p class="text-slate-600 mb-4 text-sm">Breast cancer screening supported by AI technology using the Naive Bayes algorithm.</p>
+            <a href="project-bc-detection.html" class="mt-auto inline-block px-5 py-2 rounded-full bg-teal-500 text-white font-semibold shadow hover:bg-teal-600 transition">View Study Case &rarr;</a>
+          </div>
+          <!-- Project 2 Machine Learning -->
+          <div class="project-card bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition p-6 flex flex-col hidden" data-category="ml">
+            <div class="relative mb-4">
+              <img src="src/img/closeup-brain-mri-scan-result.jpg" alt="EduLearn Platform" class="rounded-lg w-full h-56 object-cover" />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-semibold">CNN</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Brain Tumor Detection</h3>
+            <p class="text-slate-600 mb-4 text-sm">
+              This study develops a brain tumor detection system on MRI images using a Convolutional Neural Network (CNN) as a second reader, with a focus on a head-to-head comparison between the Adam and SGDM optimizer.
+            </p>
+            <a href="project-brain-tumor-detection.html" class="mt-auto inline-block px-5 py-2 rounded-full bg-teal-500 text-white font-semibold shadow hover:bg-teal-600 transition">View Study Case &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-30 pb-32 bg-gradient-to-b from-white to-slate-100">
+      <div class="container">
+        <div class="w-full px-8">
+          <div class="max-w-2xl mx-auto text-center mb-12">
+            <h2 class="font-extrabold text-3xl mb-2 text-teal-600 tracking-tight">Contact Me</h2>
+            <p class="text-slate-500 text-lg">Let's collaborate or just say hello. I'll get back to you as soon as possible!</p>
+          </div>
+          <form class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-6">
+            <div>
+              <label for="name" class="block text-slate-700 font-semibold mb-2">Name</label>
+              <div class="relative">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-teal-400">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M16 21v-2a4 4 0 0 0-8 0v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100 transition"
+                  placeholder="Your Name"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="email" class="block text-slate-700 font-semibold mb-2">Email</label>
+              <div class="relative">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-teal-400">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 4h16v16H4z" />
+                    <path d="M22 6l-10 7L2 6" />
+                  </svg>
+                </span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100 transition"
+                  placeholder="you@email.com"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-slate-700 font-semibold mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100 transition resize-none"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-teal-500 to-teal-400 text-white font-bold py-3 rounded-lg shadow hover:from-teal-600 hover:to-teal-500 transition text-lg flex items-center justify-center gap-2">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M22 2L11 13" />
+                <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <!-- Footer Start -->
+    <footer class="bg-slate-950 text-slate-200 py-8 mt-12">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-center md:text-left">
+          <span class="font-bold text-lg text-teal-400">yogapratama.</span>
+          <p class="text-slate-400 text-sm mt-1">&copy; 2025 Yoga Pratama. All rights reserved.</p>
+        </div>
+        <div class="flex gap-4 mt-2 md:mt-0">
+          <a href="https://www.linkedin.com/in/dharma-yoga/" target="_blank" class="hover:text-teal-400 transition" aria-label="LinkedIn">
+            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v5.58z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/_prayoga01/" target="_blank" class="hover:text-teal-400 transition" aria-label="Instagram">
+            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.976 1.246 2.243 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.976.975-2.243 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.976-1.246-2.243-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608C4.516 2.565 5.783 2.294 7.149 2.232 8.415 2.174 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.771.127 4.659.401 3.678 1.382 2.697 2.363 2.423 3.475 2.366 4.756.012 8.332 0 8.741 0 12c0 3.259.012 3.668.07 4.948.057 1.281.331 2.393 1.312 3.374.981.981 2.093 1.255 3.374 1.312C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.281-.057 2.393-.331 3.374-1.312.981-.981 1.255-2.093 1.312-3.374.058-1.28.07-1.689.07-4.948s-.012-3.668-.07-4.948c-.057-1.281-.331-2.393-1.312-3.374-.981-.981-2.093-1.255-3.374-1.312C15.668.012 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.threads.com/@_prayoga01" target="_blank" class="hover:text-teal-400 transition" aria-label="Threads">
+            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Footer End -->
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
